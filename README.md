@@ -18,6 +18,11 @@ java -jar nybilspriser-server/target/nybilspriser.jar
 
 Köra FE
 
+Om man inte har angular-cli installerat
+```bash
+npm install -g @angular/cli
+```
+Starta
 ```bash
 cd nybilspriser-web
 npm run start
