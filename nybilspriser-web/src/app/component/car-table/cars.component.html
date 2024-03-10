@@ -1,0 +1,25 @@
+<div class="table-responsive-lg">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fordonstyp</th>
+            <th scope="col">Märke</th>
+            <th scope="col">Modell</th>
+            <th scope="col">Bränlsetyp</th>
+            <th scope="col">Nybilspris</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let car of cars">
+            <th scope="row">{{ car.tillverkningsar }}</th>
+            <td>{{ car.fordonstyp }}</td>
+            <td>{{ car.marke }}</td>
+            <td>{{ car.modell }}</td>
+            <td>{{ car.bransletyp }}</td>
+            <td>{{ car.nybilspris | currency: 'kr':'symbol':'1.0' }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
